@@ -93,9 +93,9 @@ console.log(sentance);
 // Escape sequence characters
 let fruit = 'banna\'na\n';
 console.log(fruit);
-console.log(fruit.length);*/
+console.log(fruit.length);
 
-// string methods
+// some string methods in javascript
 let name= "         tarun      kumar    saini    ";
 console.log(name.length);
 console.log(name.toUpperCase());
@@ -104,6 +104,54 @@ console.log(name.slice(4));
 console.log(name.replace("ta","r"));
 console.log(name.concat(" is a bodybuilder", name , "good person "));
 console.log(name.trim());
+
+// for each loop
+let num = [1,2,3,4,5,6,7,8,9]
+num.forEach((element) => {
+    console.log(element*element)
+})
+// Array.form
+let name = "tarun";
+let arr = Array.from(name);
+console.log(arr);
+
+// for.....of loop
+
+for (let i of name){
+    console.log(i)
+}
+
+// map , filter and reduce 
+//map method
+let arr =[34,45,67,78,89]
+let a= arr.map((value , index , Array)=>{
+    console.log(value , index , Array)
+    return value+2
+})
+console.log(a)
+
+//filter method 
+let arr2 = [23,34,546,67,78,89]
+let a2 = arr2.filter((a)=>{
+    return a<546
+})
+console.log(a2);*/
+
+// reduce method
+let arr3= [1,2,3,4,5]
+const reduce_function =(h1,h2) => {
+    return h1+h2;
+}
+let newarr3 = arr3.reduce(reduce_function)
+console.log(newarr3);
+
+
+
+
+
+
+
+
 
 
 
